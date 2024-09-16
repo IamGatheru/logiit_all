@@ -1,18 +1,8 @@
-[project]
-name = "logiit_all"
-version = "1.0.0"
-description = "Basic blog app."
-dependencies = [
-"flask"
-]
-
-[build-system]
-requires = ["flit_core<4"]
-build-backend = "flit_core.buildapi"
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-
-[tool.coverage.run]
-branch = true
-source = ["logiit_all"]
+blinker==1.7.0
+click==8.1.7
+colorama==0.4.6
+Flask==3.0
+itsdangerous==2.1.2
+Jinja2==3.1.3
+MarkupSafe==2.1.5
+Werkzeug==3.0.1

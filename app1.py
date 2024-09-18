@@ -29,7 +29,7 @@ def create_app(test_config=None):
     def home():
         return render_template('/index.html')
     
-    from .import db
+    from . import db
     db.init_app(app)
 
     from . import auth
@@ -39,5 +39,4 @@ def create_app(test_config=None):
     app.register_blueprint(blog.bp)
     app.add_url_rule('/', endpoint='index')
 
-    if __name__ == '__main__':
-        app.run(debug=True)
+    return app

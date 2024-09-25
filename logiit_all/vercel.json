@@ -4,5 +4,5 @@
         { "src": "wsgi.py", "use": "@vercel/python"}
     ],
     "rewrites": [
-        { "source": "/(.*)", "destination": "wsgi.py"}]
+        { "source": "/(.*)", "destination": "wsgi"}]
 }

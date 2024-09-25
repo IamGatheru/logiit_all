@@ -27,7 +27,12 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/')
     def home():
-        return render_template('/index.html')
+        return render_template('/index2.html')
+
+    @app.route("/")
+    def hello_world():
+        return "<p>Hello, World!</p>"
+
     
     from . import db
     db.init_app(app)
@@ -40,3 +45,4 @@ def create_app(test_config=None):
     app.add_url_rule('/', endpoint='index')
 
     return app
+
